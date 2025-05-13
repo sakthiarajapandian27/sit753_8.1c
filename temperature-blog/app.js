@@ -26,7 +26,7 @@ app.get('/', async (req, res) => {
   const updates = await Temperature.find().sort({ updatedAt: -1 });
   res.render('index.html', { updates });
 });
-
+//for new item
 app.get('/new', (req, res) => {
   res.render('new.html');
 });
