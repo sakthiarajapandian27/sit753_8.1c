@@ -3,7 +3,6 @@
 This project is a full-stack CRUD application for managing temperature logs by city. It is containerized with Docker and deployed on Kubernetes using MongoDB as the backend database.
 
 ---
-
 ##  Features
 
 - Create, Read, Update, Delete (CRUD) temperature entries
