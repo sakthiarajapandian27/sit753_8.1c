@@ -30,7 +30,7 @@ app.get('/', async (req, res) => {
 app.get('/new', (req, res) => {
   res.render('new.html');
 });
-
+//for new
 app.post('/new', async (req, res) => {
   const { city, temperature } = req.body;
   await new Temperature({ city, temperature }).save();
