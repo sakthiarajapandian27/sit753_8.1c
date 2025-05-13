@@ -41,7 +41,7 @@ app.get('/edit/:id', async (req, res) => {
   const entry = await Temperature.findById(req.params.id);
   res.render('edit.html', { entry });
 });
-
+//edit with ID
 app.post('/edit/:id', async (req, res) => {
   const { city, temperature } = req.body;
   await Temperature.findByIdAndUpdate(req.params.id, { city, temperature, updatedAt: new Date() });
