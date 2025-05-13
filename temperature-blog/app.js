@@ -36,7 +36,7 @@ app.post('/new', async (req, res) => {
   await new Temperature({ city, temperature }).save();
   res.redirect('/');
 });
-
+//for edit
 app.get('/edit/:id', async (req, res) => {
   const entry = await Temperature.findById(req.params.id);
   res.render('edit.html', { entry });
